@@ -8,7 +8,7 @@ typedef struct {
 } User;
 
 int main() {
-  // typedef = reserved keyword that gives an existing keyword a "nickname", ususally used in conjunction with struct
+  // typedef = reserved keyword that gives an existing keyword a "nickname", usually used in conjunction with struct
 
   User user1 = {"Hassan", "password123", 123456789};
   User user2 = {"Ali", "123password", 987654321};
