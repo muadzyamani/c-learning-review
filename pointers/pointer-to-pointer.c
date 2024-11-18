@@ -1,11 +1,18 @@
 #include <stdio.h>
 
-int main() {
-  int x = 5;
-  int *p;
-  p = &x;
+void change_x(long **q) {
+  **q = 10;
+}
 
-  printf("%ld\n", p);
-  printf("%ld\n", x);
+int main() {
+  long x = 5;
+  long *p;
+  long **q;
+  p = &x;
+  q = &p;
+
+  change_x(q);
   printf("%ld\n", *p);
+  printf("%ld\n", x);
+
 }
